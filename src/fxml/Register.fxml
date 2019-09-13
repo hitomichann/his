@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="634.0" prefWidth="977.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegisterController">
+   <children>
+      <TabPane layoutX="-2.0" layoutY="-1.0" prefHeight="635.0" prefWidth="977.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="挂号">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="579.0" prefWidth="964.0">
+                     <children>
+                        <TextField layoutX="209.0" layoutY="48.0" prefHeight="36.0" prefWidth="174.0" />
+                        <Label layoutX="125.0" layoutY="54.0" text="病 历 号" />
+                        <Label layoutX="122.0" layoutY="204.0" text="出生日期" />
+                        <DatePicker layoutX="210.0" layoutY="198.0" prefHeight="36.0" prefWidth="175.0" />
+                        <Label layoutX="124.0" layoutY="104.0" text="姓      名" />
+                        <TextField layoutX="210.0" layoutY="98.0" prefHeight="36.0" prefWidth="174.0" />
+                        <Label layoutX="124.0" layoutY="304.0" text="身份证号" />
+                        <Label layoutX="124.0" layoutY="155.0" text="性      别" />
+                        <ChoiceBox fx:id="gender" layoutX="210.0" layoutY="148.0" prefHeight="37.0" prefWidth="176.0" />
+                        <Label layoutX="124.0" layoutY="254.0" text="年       龄" />
+                        <TextField layoutX="209.0" layoutY="248.0" prefHeight="36.0" prefWidth="174.0" />
+                        <TextField layoutX="210.0" layoutY="298.0" prefHeight="36.0" prefWidth="174.0" />
+                        <Label layoutX="125.0" layoutY="354.0" text="家庭住址" />
+                        <TextField layoutX="210.0" layoutY="348.0" prefHeight="36.0" prefWidth="174.0" />
+                        <Label layoutX="580.0" layoutY="54.0" text="结算类别" />
+                        <ChoiceBox fx:id="settlement" layoutX="664.0" layoutY="48.0" prefHeight="37.0" prefWidth="176.0" />
+                        <Label layoutX="580.0" layoutY="104.0" text="挂号级别" />
+                        <ChoiceBox fx:id="level" layoutX="664.0" layoutY="98.0" prefHeight="37.0" prefWidth="176.0" />
+                        <Label layoutX="580.0" layoutY="155.0" text="挂号科室" />
+                        <Label layoutX="580.0" layoutY="204.0" text="看诊医生" />
+                        <Label layoutX="580.0" layoutY="304.0" text="病 历 本" />
+                        <Label layoutX="580.0" layoutY="354.0" text="应收金额" />
+                        <ChoiceBox fx:id="department" layoutX="664.0" layoutY="149.0" prefHeight="37.0" prefWidth="176.0" />
+                        <ChoiceBox fx:id="doctor" layoutX="664.0" layoutY="198.0" prefHeight="37.0" prefWidth="176.0" />
+                        <CheckBox layoutX="660.0" layoutY="304.0" mnemonicParsing="false" />
+                        <TextField layoutX="665.0" layoutY="348.0" prefHeight="36.0" prefWidth="174.0" />
+                        <Button layoutX="580.0" layoutY="476.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="103.0" text="挂号" />
+                        <Button layoutX="737.0" layoutY="476.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="103.0" text="清空" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="收费">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="50.0" layoutY="20.0" text="病 历 号" />
+                        <TextField layoutX="130.0" layoutY="14.0" prefHeight="36.0" prefWidth="134.0" />
+                        <TextField layoutX="130.0" layoutY="69.0" prefHeight="36.0" prefWidth="134.0" />
+                        <Label layoutX="50.0" layoutY="75.0" text="姓      名" />
+                        <Label layoutX="50.0" layoutY="130.0" text="性      别" />
+                        <ChoiceBox layoutX="130.0" layoutY="124.0" prefHeight="36.0" prefWidth="134.0" />
+                        <Label layoutX="50.0" layoutY="185.0" text="年      龄" />
+                        <ChoiceBox layoutX="213.0" layoutY="179.0" prefHeight="36.0" prefWidth="51.0" />
+                        <TextField layoutX="130.0" layoutY="179.0" prefHeight="36.0" prefWidth="77.0" />
+                        <DatePicker layoutX="460.0" layoutY="14.0" prefHeight="36.0" prefWidth="136.0" />
+                        <Label layoutX="381.0" layoutY="20.0" text="出生日期" />
+                        <Label layoutX="382.0" layoutY="75.0" text="医保诊断" />
+                        <TextField layoutX="462.0" layoutY="69.0" prefHeight="36.0" prefWidth="134.0" />
+                        <TextField layoutX="462.0" layoutY="124.0" prefHeight="36.0" prefWidth="134.0" />
+                        <Label layoutX="382.0" layoutY="130.0" text="身份证号" />
+                        <ChoiceBox layoutX="462.0" layoutY="179.0" prefHeight="36.0" prefWidth="134.0" />
+                        <Label layoutX="382.0" layoutY="185.0" text="结算类别" />
+                        <Label layoutX="713.0" layoutY="20.0" text="医疗证号" />
+                        <TextField layoutX="793.0" layoutY="14.0" prefHeight="36.0" prefWidth="134.0" />
+                        <Label layoutX="713.0" layoutY="75.0" text="医疗类别" />
+                        <ChoiceBox layoutX="793.0" layoutY="69.0" prefHeight="36.0" prefWidth="134.0" />
+                        <ChoiceBox layoutX="793.0" layoutY="124.0" prefHeight="36.0" prefWidth="134.0" />
+                        <Label layoutX="713.0" layoutY="130.0" text="开单科室" />
+                        <Label layoutX="713.0" layoutY="185.0" text="开单医生" />
+                        <ChoiceBox layoutX="793.0" layoutY="179.0" prefHeight="36.0" prefWidth="134.0" />
+                        <TableView layoutX="-3.0" layoutY="232.0" prefHeight="357.0" prefWidth="983.0">
+                          <columns>
+                            <TableColumn prefWidth="186.0" text="项目名称" />
+                            <TableColumn minWidth="0.0" prefWidth="116.0" text="规格" />
+                              <TableColumn minWidth="0.0" prefWidth="100.0" text="单价" />
+                              <TableColumn minWidth="0.0" prefWidth="88.0" text="数量" />
+                              <TableColumn minWidth="0.0" prefWidth="100.0" text="单位" />
+                              <TableColumn minWidth="0.0" prefWidth="101.0" text="付数" />
+                              <TableColumn minWidth="0.0" prefWidth="95.0" text="金额" />
+                              <TableColumn prefWidth="196.0" text="执行科室" />
+                          </columns>
+                        </TableView>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="退号">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="50.0" layoutY="20.0" text="病 历 号" />
+                        <TextField layoutX="130.0" layoutY="14.0" prefHeight="36.0" prefWidth="134.0" />
+                        <TextField layoutX="130.0" layoutY="69.0" prefHeight="36.0" prefWidth="134.0" />
+                        <Label layoutX="50.0" layoutY="75.0" text="姓      名" />
+                        <Label layoutX="50.0" layoutY="130.0" text="性      别" />
+                        <ChoiceBox layoutX="130.0" layoutY="124.0" prefHeight="36.0" prefWidth="134.0" />
+                        <Label layoutX="50.0" layoutY="185.0" text="年      龄" />
+                        <ChoiceBox layoutX="213.0" layoutY="179.0" prefHeight="36.0" prefWidth="51.0" />
+                        <TextField layoutX="130.0" layoutY="179.0" prefHeight="36.0" prefWidth="77.0" />
+                        <DatePicker layoutX="460.0" layoutY="14.0" prefHeight="36.0" prefWidth="136.0" />
+                        <Label layoutX="381.0" layoutY="20.0" text="出生日期" />
+                        <Label layoutX="382.0" layoutY="75.0" text="家庭住址" />
+                        <TextField layoutX="462.0" layoutY="69.0" prefHeight="36.0" prefWidth="134.0" />
+                        <TextField layoutX="462.0" layoutY="124.0" prefHeight="36.0" prefWidth="134.0" />
+                        <Label layoutX="382.0" layoutY="130.0" text="身份证号" />
+                        <ChoiceBox layoutX="462.0" layoutY="179.0" prefHeight="36.0" prefWidth="134.0" />
+                        <Label layoutX="382.0" layoutY="185.0" text="结算类别" />
+                        <Label layoutX="713.0" layoutY="20.0" text="医疗证号" />
+                        <TextField layoutX="793.0" layoutY="14.0" prefHeight="36.0" prefWidth="134.0" />
+                        <Label layoutX="713.0" layoutY="75.0" text="医疗类别" />
+                        <ChoiceBox layoutX="793.0" layoutY="69.0" prefHeight="36.0" prefWidth="134.0" />
+                        <TableView layoutX="-3.0" layoutY="232.0" prefHeight="357.0" prefWidth="983.0">
+                           <columns>
+                              <TableColumn prefWidth="115.0" text="看诊科室" />
+                              <TableColumn prefWidth="130.0" text="挂号日期" />
+                              <TableColumn prefWidth="130.0" text="看诊日期" />
+                              <TableColumn prefWidth="130.0" text="挂号级别" />
+                              <TableColumn minWidth="6.0" prefWidth="130.0" text="医保诊断" />
+                              <TableColumn prefWidth="106.0" text="病历本" />
+                              <TableColumn prefWidth="105.0" text="是否已诊" />
+                              <TableColumn minWidth="6.0" prefWidth="130.0" text="实收费用" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="患者费用查询">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="50.0" layoutY="20.0" text="病 历 号" />
+                        <TextField layoutX="130.0" layoutY="14.0" prefHeight="36.0" prefWidth="134.0" />
+                        <DatePicker layoutX="460.0" layoutY="14.0" prefHeight="36.0" prefWidth="136.0" />
+                        <Label layoutX="381.0" layoutY="20.0" text="开始时间" />
+                        <TableView layoutX="-3.0" layoutY="79.0" prefHeight="510.0" prefWidth="983.0">
+                           <columns>
+                              <TableColumn prefWidth="130.0" text="项目名称" />
+                              <TableColumn minWidth="0.0" prefWidth="116.0" text="规格" />
+                              <TableColumn minWidth="0.0" prefWidth="100.0" text="单价" />
+                              <TableColumn minWidth="0.0" prefWidth="88.0" text="数量" />
+                              <TableColumn minWidth="0.0" prefWidth="100.0" text="单位" />
+                              <TableColumn minWidth="0.0" prefWidth="101.0" text="付数" />
+                              <TableColumn minWidth="0.0" prefWidth="95.0" text="费用" />
+                              <TableColumn prefWidth="127.0" text="执行科室" />
+                              <TableColumn prefWidth="130.0" text="收费时间" />
+                           </columns>
+                        </TableView>
+                        <Label layoutX="698.0" layoutY="20.0" text="结束时间" />
+                        <DatePicker layoutX="777.0" layoutY="14.0" prefHeight="36.0" prefWidth="136.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

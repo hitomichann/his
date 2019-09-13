@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="651.0" prefWidth="998.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DoctorController">
+   <children>
+      <TabPane prefHeight="686.0" prefWidth="1107.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="门诊病历">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="641.0" prefWidth="1089.0">
+                     <children>
+                        <Label layoutX="261.0" layoutY="32.0" text="主      诉" />
+                        <TextField layoutX="353.0" layoutY="25.0" prefHeight="36.0" prefWidth="246.0" />
+                        <CheckBox layoutX="620.0" layoutY="31.0" mnemonicParsing="false" text="孕产妇" />
+                        <Label layoutX="265.0" layoutY="81.0" text="现 病 史" />
+                        <TextField layoutX="353.0" layoutY="73.0" prefHeight="40.0" prefWidth="360.0" />
+                        <Label layoutX="265.0" layoutY="133.0" text="既 往 史" />
+                        <Label layoutX="265.0" layoutY="182.0" text="个 人 史" />
+                        <TextField layoutX="353.0" layoutY="125.0" prefHeight="40.0" prefWidth="360.0" />
+                        <TextField layoutX="353.0" layoutY="174.0" prefHeight="40.0" prefWidth="360.0" />
+                        <TextField layoutX="353.0" layoutY="224.0" prefHeight="40.0" prefWidth="360.0" />
+                        <Label layoutX="265.0" layoutY="232.0" text="体格检查" />
+                        <Label layoutX="265.0" layoutY="282.0" text="辅助检查" />
+                        <TextField layoutX="353.0" layoutY="274.0" prefHeight="40.0" prefWidth="360.0" />
+                        <Label layoutX="265.0" layoutY="339.0" text="西医诊断" />
+                        <TableView layoutX="353.0" layoutY="339.0" prefHeight="96.0" prefWidth="360.0">
+                          <columns>
+                            <TableColumn prefWidth="92.0" text="ICD编码" />
+                            <TableColumn prefWidth="52.0" text="名称" />
+                              <TableColumn prefWidth="66.0" text="主诊" />
+                              <TableColumn prefWidth="50.0" text="疑似" />
+                              <TableColumn prefWidth="97.0" text="发病日期" />
+                          </columns>
+                        </TableView>
+                        <Label layoutX="265.0" layoutY="457.0" text="中医诊断" />
+                        <TreeTableView layoutX="353.0" layoutY="457.0" prefHeight="106.0" prefWidth="360.0">
+                          <columns>
+                            <TreeTableColumn prefWidth="84.0" text="诊断代码" />
+                            <TreeTableColumn prefWidth="89.0" text="诊断名称" />
+                              <TreeTableColumn prefWidth="95.0" text="辩证分型" />
+                              <TreeTableColumn prefWidth="91.0" text="发病日期" />
+                          </columns>
+                        </TreeTableView>
+                        <Button layoutX="347.0" layoutY="587.0" mnemonicParsing="false" text="暂存" />
+                        <Button layoutX="490.0" layoutY="587.0" mnemonicParsing="false" text="提交" />
+                        <Button layoutX="647.0" layoutY="587.0" mnemonicParsing="false" text="清屏" />
+                        <TabPane layoutX="750.0" layoutY="19.0" prefHeight="604.0" prefWidth="331.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="病历模板">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Group />
+                                          <RadioButton layoutX="21.0" layoutY="14.0" mnemonicParsing="false" text="全院">
+                                             <toggleGroup>
+                                                <ToggleGroup fx:id="mygroup" />
+                                             </toggleGroup>
+                                          </RadioButton>
+                                          <RadioButton layoutX="110.0" layoutY="14.0" mnemonicParsing="false" text="科室" toggleGroup="$mygroup" />
+                                          <RadioButton layoutX="205.0" layoutY="14.0" mnemonicParsing="false" selected="true" text="个人" toggleGroup="$mygroup" />
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab text="常用诊断">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              </content>
+                            </Tab>
+                              <Tab text="历史病例">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                 </content>
+                              </Tab>
+                          </tabs>
+                        </TabPane>
+                        <TabPane layoutX="14.0" layoutY="13.0" prefHeight="545.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="本人">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TabPane prefHeight="500.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+                                            <tabs>
+                                              <Tab text="待诊">
+                                                <content>
+                                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                                </content>
+                                              </Tab>
+                                              <Tab text="已诊">
+                                                <content>
+                                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                                </content>
+                                              </Tab>
+                                            </tabs>
+                                          </TabPane>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab text="科室">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TabPane prefHeight="500.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+                                            <tabs>
+                                              <Tab text="待诊">
+                                                <content>
+                                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                                </content>
+                                              </Tab>
+                                              <Tab text="已诊">
+                                                <content>
+                                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                                </content>
+                                              </Tab>
+                                            </tabs>
+                                          </TabPane>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                          </tabs>
+                        </TabPane>
+                        <Button layoutX="137.0" layoutY="585.0" mnemonicParsing="false" text="查询" />
+                        <TextField layoutX="40.0" layoutY="585.0" prefHeight="22.0" prefWidth="86.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="成药处方">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="30.0" layoutY="23.0" prefHeight="24.0" prefWidth="73.0" text="诊断结果" />
+                        <Button layoutX="130.0" layoutY="18.0" mnemonicParsing="false" text="编辑" />
+                        <Separator layoutX="2.0" layoutY="50.0" prefHeight="32.0" prefWidth="1107.0" />
+                        <Label layoutX="30.0" layoutY="82.0" text="处方类型" />
+                        <ChoiceBox fx:id="west" layoutX="130.0" layoutY="76.0" prefWidth="150.0" />
+                        <Label layoutX="336.0" layoutY="82.0" text="处方金额" />
+                        <Label layoutX="440.0" layoutY="82.0" prefHeight="24.0" prefWidth="65.0" text="36" />
+                        <TableView layoutX="30.0" layoutY="136.0" prefHeight="379.0" prefWidth="1059.0">
+                          <columns>
+                            <TableColumn prefWidth="44.0" text="C1" />
+                            <TableColumn prefWidth="109.0" text="药品名称" />
+                              <TableColumn prefWidth="70.0" text="规格" />
+                              <TableColumn prefWidth="83.0" text="单价" />
+                              <TableColumn prefWidth="669.0" text="用药嘱托" />
+                          </columns>
+                        </TableView>
+                        <Button layoutX="759.0" layoutY="542.0" mnemonicParsing="false" text="增方" />
+                        <Button layoutX="853.0" layoutY="542.0" mnemonicParsing="false" text="删方" />
+                        <Button layoutX="943.0" layoutY="542.0" mnemonicParsing="false" text="暂存" />
+                        <Button layoutX="1029.0" layoutY="542.0" mnemonicParsing="false" text="保存" />
+                        <Button layoutX="943.0" layoutY="76.0" mnemonicParsing="false" text="增药" />
+                        <Button layoutX="1029.0" layoutY="76.0" mnemonicParsing="false" text="删药" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="草药处方">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="30.0" layoutY="23.0" prefHeight="24.0" prefWidth="73.0" text="诊断结果" />
+                        <Button layoutX="130.0" layoutY="18.0" mnemonicParsing="false" text="编辑" />
+                        <Separator layoutX="2.0" layoutY="50.0" prefHeight="32.0" prefWidth="1107.0" />
+                        <Label layoutX="30.0" layoutY="82.0" text="处方类型" />
+                        <ChoiceBox fx:id="west1" layoutX="130.0" layoutY="76.0" prefWidth="150.0" />
+                        <Label layoutX="336.0" layoutY="82.0" text="处方金额" />
+                        <Label layoutX="440.0" layoutY="82.0" prefHeight="24.0" prefWidth="65.0" text="36" />
+                        <TableView layoutX="30.0" layoutY="136.0" prefHeight="379.0" prefWidth="1059.0">
+                           <columns>
+                              <TableColumn prefWidth="44.0" text="C1" />
+                              <TableColumn prefWidth="109.0" text="药品名称" />
+                              <TableColumn prefWidth="70.0" text="规格" />
+                              <TableColumn prefWidth="83.0" text="单价" />
+                              <TableColumn prefWidth="669.0" text="用药嘱托" />
+                           </columns>
+                        </TableView>
+                        <Button layoutX="759.0" layoutY="542.0" mnemonicParsing="false" text="增方" />
+                        <Button layoutX="853.0" layoutY="542.0" mnemonicParsing="false" text="删方" />
+                        <Button layoutX="943.0" layoutY="542.0" mnemonicParsing="false" text="暂存" />
+                        <Button layoutX="1029.0" layoutY="542.0" mnemonicParsing="false" text="保存" />
+                        <Button layoutX="943.0" layoutY="76.0" mnemonicParsing="false" text="增药" />
+                        <Button layoutX="1029.0" layoutY="76.0" mnemonicParsing="false" text="删药" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

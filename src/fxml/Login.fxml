@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <Pane layoutX="32.0" layoutY="30.0" prefHeight="208.0" prefWidth="537.0">
+         <children>
+            <PasswordField fx:id="passwordText" layoutX="215.0" layoutY="128.0" />
+            <TextField fx:id="nameText" layoutX="215.0" layoutY="58.0" />
+            <Label layoutX="99.0" layoutY="64.0" prefHeight="24.0" prefWidth="60.0" text="登录名" />
+            <Label layoutX="118.0" layoutY="134.0" />
+            <Label layoutX="111.0" layoutY="134.0" text="密码" />
+         </children>
+      </Pane>
+      <Button fx:id="login" layoutX="217.0" layoutY="292.0" mnemonicParsing="false" onAction="#loginHandler" prefHeight="57.0" prefWidth="167.0" text="登录" />
+      <RadioButton fx:id="doctorRb" layoutX="137.0" layoutY="236.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="161.0" selected="true" text="门诊医生">
+         <toggleGroup>
+            <ToggleGroup fx:id="myGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="registerRb" layoutX="353.0" layoutY="236.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="161.0" text="挂号收费员" toggleGroup="$myGroup" />
+   </children>
+</AnchorPane>
